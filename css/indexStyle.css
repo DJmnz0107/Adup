@@ -1,0 +1,103 @@
+#princp {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-background);
+    padding-bottom: 5%;
+}
+
+#princp button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#info1 {
+    width: 50%;
+}
+
+#vistaPrevia {
+    width: 40%;
+}
+
+.fondo {
+    background-image: url(../imgs/1.png);
+    background-position: 50%;
+    background-size: cover;
+}
+
+#allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 35%;
+}
+
+@media (max-width: 500px) {
+    #info1 {
+        width: 95%;
+        text-align: justify;
+    }
+
+    #vistaPrevia {
+        width: 95%;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    #carruselEquisde {
+        width: 100%;
+    }
+
+    #princp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #info1 {
+        width: 95%;
+    }
+
+    #vistaPrevia {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
+
+.card {
+
+    -moz-animation: miAnimacion 0.5s ;
+    -webkit-animation: miAnimacion 1s linear;
+    }
+    
+    
+    @-moz-keyframes miAnimacion 
+    {
+    0% { bottom:100%px;}
+    100% {bottom:0%;}
+    }
+    
+    @-webkit-keyframes miAnimacion
+    {
+    0% {bottom: -300px;
+        opacity: 0%;}
+    100% {bottom:0px;
+          opacity: 100%;
+        }
+    }
+
+    

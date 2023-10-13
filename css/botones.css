@@ -1,0 +1,33 @@
+
+.ov-btn-grow-skew {
+    background: #fff; 
+    color: #1770ff; 
+    border: 2px solid #1770ff; 
+    padding: 16px 20px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-skew:hover {
+    color: #fff;
+  }
+  .ov-btn-grow-skew::after {
+    content: "";
+    background: #1770ff;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
