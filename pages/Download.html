@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head onload="load()">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/icon" href="../imgs/icono-pag.ico">
+    <title>Licencias del sistema</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/Download.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="../js/Menu.js"></script>
+    <script src="../js/footer.js"></script>
+</head>
+<body>
+    
+    <div id="menuContenedor">
+
+    </div>
+
+    <main>
+        <div id="cont2" >
+            <div id="cont22"  style="background-color: var(--color-background); color: var(--color-letra);">
+              <div id="img2">
+                <img id="imagenAnmd1"src="../imgs/manual.png" alt="">
+              </div>
+              <div id="info2">
+                <h1 class="display-3">Manual de uso</h1>
+
+                <p class="fs-4">Es importante que procures tener el manual de uso del sistema ADUP y leerlo detenidamente 
+                  para usar de manera correcta el sistema y evitar confusiones, para entender las diversas funciones con las que 
+                  cuenta.</p>
+            
+                <p class="fs-4">Descargar el manual de uso aqui.</p>
+                <button id="DescargarManual" onclick="" type="button" class="btn btn-info btn-lg text-light">Descargar manual</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="cont1" style="background-color: var(--color-background); color: var(--color-letra);">
+            <h1 class="display-3">¿Qué se necesita para descargar el programa en tu ordenador?</h1>
+            <div class="accordion" id="accordionExample">
+                
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Requerimentos Mínimos
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                     <b>Hardware</b> 
+                      <li> Intel Core i3 de 7ma generación en adelante.</li>
+                      <li> 6GB de RAM.</li>
+                      <li> Aproximadamente 1 GB de espacio de almacenamiento para alojar el sistema en el equipo.</li>
+                      <li> Dispositivo gráfico Microsoft DirectX 9 con controlador WDDM.</li>
+                      <br>
+                     <b>Software</b>
+                      <li> Tener instalado SQL Server 2012.</li>
+                      <li> Contar con Microsoft .NET Framework 4.8 descargado en el sistema operativo.</li>
+                      <li> Sistema operativo Windows 8.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Requerimentos recomendados
+                  
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                     <b>Hardware</b> 
+                      <li> Intel Core i5 de 8va generación en adelante.</li>
+                      <li> 8GB de RAM</li>
+                      <li> 2GB de espacio de almacenamiento para alojar el sistema en el equipo para asegurar un funcionamiento óptimo.</li>
+                      <li> Sistema operativo Windows 10 u 11.</li>
+                      <li> Compatible con DirectX 12 o posterior con el controlador WDDM 2.0.</li>
+                      <br>
+                     <b>Software</b> 
+                      <li> Tener instalado SQL Server 2019.</li>
+                      <li> Sistema operativo Windows 10 u 11.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="img1">
+                <img src="../imgs/requerimentos (2).png" style="background-color: var(--color-background);">
+            </div>
+        </div>
+
+    </main>
+
+    <div id="cont3">
+        <div id="cajaDesc" style="background-color: var(--color-background); color: var(--color-letra);">
+          <h1 class="display-3 text-center">Descarga el Sistema ADUP</h1>
+
+          <p id="parr1" class="fs-4 text-justify">Para descargar el sistema el primer paso es rellenar el siguiente formulario corto y seleccionas que licencia deseas obtener, luego de esto, el programa empezará a instalarse en tu sistema operativo para que empieces a usarlo.</p>
+
+              <div id="imagenCompra">
+                  <img src="../imgs/monitorDescarga.jpg" alt="">
+              </div>
+
+              <div id="selectorLicenscia" class="card-body pb-0">
+                  <div class="mb-2">
+                    <h5 class="card-title fs-4 mb-4">Seleccione una licencia para adquirir:</h5>
+                    <select class="form-select" id="tipoLicencia">
+                        <option value="ninguno">Seleccione una Opción</option>
+                      <option value="sencilla" id="opcionSencilla">Licencia Basic</option>
+                      <option value="premium" id="opcionPremium">Licencia Complete</option>
+                    </select>
+                    <p style="color: var(--color-letra); margin-top: 10px;">Descripción: <span id="descripcion" style="color: var(--color-letra);">Debe seleccionar un tipo de licencia
+                        para obtener su descripcion y proseguir con la compra
+                    </span></p>
+                  </div>
+                </div>
+                <hr class="my-0" />
+                <div class="card-body pb-0 mb-3">
+                  <div class="">
+                    <p  style="color: var(--color-letra);">Subtotal: <span id="costo" style="color: var(--color-letra);">$</span></p>
+                  </div>
+                </div>
+                <hr class="my-0" />
+                <div class="card-body">
+                  <div class=" align-items-center pb-2 mb-1">
+                    <button type="button" style="width: 100%;" class="btn btn-outline-warning mt-4" id="pasoFinal">Comprar ahora</button>
+                  </div>
+                </div>
+      </div>        
+    </div>
+
+    <div id="ContenedorFooter">
+
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
+    <script src="../js/Download.js"></script>
+    <script src="../js/imgs.js"></script>
+
+    <script src="../js/CargarMenu.js"></script>
+    <script src="../js/CargarFooter.js"></script>
+    <script src="../js/DarkMode.js"></script>
+
+
+</body>
+</html>
